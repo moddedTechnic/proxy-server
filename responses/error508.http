@@ -1,0 +1,17 @@
+HTTP/1.1 508 Looping Detected
+Content-Type: text/html; charset=UTF-8
+Content-Length: 302
+
+<!DOCTYPE HTML>
+<html>
+    <head>
+        <title>Looping Detected</title>
+    </head>
+
+    <body>
+        <h1>Looping Detected!</h1>
+
+        <p>It appears you were trying to request a page from this server.</p>
+        <p>Ensure the <code>Hosts</code> header is set correctly.</p>
+    </body>
+</html>
