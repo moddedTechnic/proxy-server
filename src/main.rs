@@ -4,6 +4,7 @@ use std::net::{ToSocketAddrs, TcpListener, TcpStream, SocketAddr, IpAddr};
 use std::path::Path;
 use std::thread;
 
+
 #[derive(Debug)]
 enum ClientError {
     Utf8Error(std::string::FromUtf8Error),
@@ -12,6 +13,7 @@ enum ClientError {
     NoHostFound,
     SelfRequested,
 }
+
 
 fn read_stream(stream: &mut TcpStream) -> Result<String, ClientError> {
     let mut buffer = [0; 1024];
